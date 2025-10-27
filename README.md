@@ -63,22 +63,6 @@ The analysis yielded several key insights into customer behavior:
 *   **Power BI:** For creating interactive dashboards and visualizations.
 *   **Git & GitHub:** For version control and project hosting.
 
-## How to Use This Project
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/SayanrupBarman/customer-behavior-analysis.git
-    cd customer-behavior-analysis
-    ```
-2.  **Set up the environment:**
-    *   Install the required Python libraries: `pandas`, `psycopg2-binary`, `sqlalchemy`.
-3.  **Data Preparation:**
-    *   Open and run the `Customer_Shopping_Behavior_Analysis.ipynb` notebook to clean the data and load it into your configured SQL database.
-4.  **Analysis:**
-    *   Use the queries in `customer_behavior_sql_queries.sql` to perform your own analysis on the data in the SQL database.
-5.  **Visualization:**
-    *   Open `customer_behavior_dashboard.pbix` in Power BI and connect it to your SQL database to explore the interactive dashboard.
-
 ## Conclusion and Recommendations
 
 The analysis reveals that focusing on customer retention and subscription services can significantly boost revenue. Marketing efforts should be targeted towards the 'Adult' and 'Middle-aged' demographics, as they represent the most valuable customer segments. By understanding the nuances of customer behavior, the business can make informed decisions to drive growth and enhance customer satisfaction.
