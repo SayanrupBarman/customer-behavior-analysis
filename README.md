@@ -41,21 +41,23 @@ This project follows a standard data analysis workflow:
 
 The analysis yielded several key insights into customer behavior:
 
-*   **Gender and Spending:** While the dataset contains more male customers, the total revenue generated is not proportional. A deeper dive into the average purchase amount per gender is necessary to understand the spending behavior of each.
+*   **Gender and Spending:** Male customers generated a total revenue of **$157,890**, while female customers generated **$75,191**.
 *   **Top Rated Products:** The top 5 products with the highest average review ratings are:
-    1.  *Product A* (Avg. Rating: X.X)
-    2.  *Product B* (Avg. Rating: X.X)
-    3.  *Product C* (Avg. Rating: X.X)
-    4.  *Product D* (Avg. Rating: X.X)
-    5.  *Product E* (Avg. Rating: X.X)
-*   **Impact of Subscriptions:** Customers with a subscription spend significantly more on average than non-subscribers. The average purchase amount for subscribed customers is **$X.XX**, compared to **$Y.YY** for non-subscribers. This represents a **Z%** higher spend.
+    1.  **Gloves** (Avg. Rating: 3.86)
+    2.  **Sandals** (Avg. Rating: 3.84)
+    3.  **Boots** (Avg. Rating: 3.82)
+    4.  **Hat** (Avg. Rating: 3.80)
+    5.  **Skirt** (Avg. Rating: 3.78)
+*   **Impact of Subscriptions:** There is no significant difference in spending between subscribed and non-subscribed customers. The average purchase amount for subscribed customers is **$59.49**, compared to **$59.87** for non-subscribers.
 *   **Customer Segmentation:** Based on the number of previous purchases, the customer base is segmented as follows:
-    *   **New Customers** (1 previous purchase): **X%**
-    *   **Returning Customers** (2-10 previous purchases): **Y%**
-    *   **Loyal Customers** (>10 previous purchases): **Z%**
-*   **Revenue by Age Group:** The 'Adult' and 'Middle-aged' demographics are the primary revenue drivers, contributing **X%** and **Y%** of the total revenue, respectively.
-
-*(Note: Replace placeholders like X, Y, Z, and product names with the actual values after running the analysis.)*
+    *   **Loyal Customers** (>10 previous purchases): **79.9%**
+    *   **Returning Customers** (2-10 previous purchases): **18.0%**
+    *   **New Customers** (1 previous purchase): **2.1%**
+*   **Revenue by Age Group:** The revenue contribution is fairly evenly distributed across age groups:
+    *   **Young Adult:** 26.7%
+    *   **Adult:** 24.0%
+    *   **Middle-aged:** 25.4%
+    *   **Senior:** 23.9%
 
 ## Tools and Technologies
 *   **Python:** pandas for data manipulation and cleaning, SQLAlchemy for database interaction.
