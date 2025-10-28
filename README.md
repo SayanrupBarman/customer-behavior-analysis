@@ -1,13 +1,13 @@
 # Customer Shopping Behavior Analysis
 
 ## Problem Statement
-In the competitive e-commerce landscape, understanding customer behavior is paramount for sustainable growth. Businesses need to move beyond generic marketing and tailor their strategies to specific customer segments. This project addresses the challenge of extracting actionable insights from raw shopping data to understand purchasing patterns, identify high-value customer segments, and optimize marketing efforts.
+An e-commerce business needed to move beyond generic marketing and understand its customer base to drive growth. The key challenge was to extract actionable insights from raw shopping data to identify high-value segments and purchasing patterns.
 
 ## Objective
 The primary objective of this project is to conduct a comprehensive analysis of customer shopping behavior to answer key business questions and provide data-driven recommendations. This involves a full data analysis workflow, from data cleaning and preparation to in-depth analysis and visualization.
 
 ## Data Collection
-The dataset for this analysis is `customer_shopping_behavior.csv`, a flat file containing 3,900 records and 18 columns detailing customer demographics, transaction information, and product details.
+The dataset for this analysis is `shopping_behavior_updated.csv`, a flat file containing 3,900 records and 18 columns detailing customer demographics, transaction information, and product details.
 
 ### Key Data Points:
 *   **Customer Demographics:** Age, Gender, Location
@@ -17,27 +17,29 @@ The dataset for this analysis is `customer_shopping_behavior.csv`, a flat file c
 
 ## Project Workflow
 
-This project follows a standard data analysis workflow:
+This project follows a standard data analysis workflow from data preparation to visualization:
 
 1.  **Data Cleaning and Preparation (Python):**
     *   The raw CSV data was loaded into a pandas DataFrame.
-    *   Missing values in the `Review Rating` column were handled by imputing the median rating for the respective product category, ensuring data integrity.
-    *   Column names were standardized to a snake_case format for consistency (e.g., `Purchase Amount (USD)` became `purchase_amount`).
-    *   Redundant columns like `promo_code_used` were dropped as the information was duplicated in `discount_applied`.
+    *   Missing values in the `review_rating` column were handled by imputing the median rating for the respective product category.
+    *   Column names were standardized to a snake_case format for consistency.
     *   Feature engineering was performed to create new, insightful columns:
         *   `age_group`: Categorized customers into 'Young Adult', 'Adult', 'Middle-aged', and 'Senior'.
-        *   `purchase_frequency_days`: Converted descriptive frequencies (e.g., 'Weekly', 'Monthly') into numerical days.
 
 2.  **Data Loading (Python -> SQL):**
     *   The cleaned and prepared DataFrame was loaded into a SQL database (PostgreSQL) using SQLAlchemy, enabling robust and efficient querying.
 
 3.  **Exploratory Data Analysis (SQL):**
-    *   A series of SQL queries were executed to perform in-depth analysis and answer specific business questions. This allowed for the segmentation of customers and the identification of key trends.
+    *   A series of SQL queries were executed to answer specific business questions, such as segmenting customers and identifying top-rated products.
 
 4.  **Data Visualization (Power BI):**
     *   An interactive dashboard was created in Power BI, connected directly to the SQL database. The dashboard provides a visual representation of the findings, making it easy for stakeholders to understand the insights.
 
-## Key Insights (Data-Driven)
+<p align="center">
+  <img src="customer_dashboard.png" width="700" alt="Customer Analysis Dashboard">
+</p>
+
+## Key Insights
 
 The analysis yielded several key insights into customer behavior:
 
@@ -61,10 +63,12 @@ The analysis yielded several key insights into customer behavior:
 
 ## Tools and Technologies
 *   **Python:** pandas for data manipulation and cleaning, SQLAlchemy for database interaction.
-*   **SQL (PostgreSQL):** For data analysis and querying.
+*   **SQL (PostgreSQL):** For in-depth data analysis and querying.
 *   **Power BI:** For creating interactive dashboards and visualizations.
 *   **Git & GitHub:** For version control and project hosting.
 
 ## Conclusion and Recommendations
 
-The analysis reveals that focusing on customer retention and subscription services can significantly boost revenue. Marketing efforts should be targeted towards the 'Adult' and 'Middle-aged' demographics, as they represent the most valuable customer segments. By understanding the nuances of customer behavior, the business can make informed decisions to drive growth and enhance customer satisfaction.
+The analysis provided clear, data-driven recommendations. For instance, it highlighted that while male customers generate over double the revenue of female customers, the spending habits between subscribed and non-subscribed users are nearly identical. This insight allows the business to refocus its marketing efforts on high-revenue demographics and rethink its subscription value proposition.
+
+The analysis provided clear, data-driven recommendations. For instance, it highlighted that while male customers generate over double the revenue of female customers, the spending habits between subscribed and non-subscribed users are nearly identical. This insight allows the business to refocus its marketing efforts on high-revenue demographics and rethink its subscription value proposition.
